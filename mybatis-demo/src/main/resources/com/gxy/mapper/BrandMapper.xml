@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.gxy.mapper.BrandMapper">
+    <!-- 数据库字段名称和实体类属性名称不一样时，不能自动封装
+         1. 起别名，不一样的起别名，但查询多后，不方便，用sql片段解决这个问题，但复用性低不灵活
+         2. 用resultmap
+     -->
+    <!-- sql片段 -->
+    <!-- <sql id="brand_coloum">
+        id, brand_name as brandName, company_name as companyName, ordered, description, status
+    </sql>
+    <select id="selectAll" resultType="com.gxy.pojo.Brand">
+#         select id, brand_name as brandName, company_name as companyName, ordered, description, status
+#         from tb_brand;
+        select
+            <include refid="brand_coloum"></include>
+        from tb_brand;
+    </select> -->
+
+    <resultMap id="brandResultMap" type="com.gxy.pojo.Brand">
+        <result column="brand_name" property="brandName"></result>
+        <result column="company_name" property="companyName"></result>
+    </resultMap>
+    <select id="selectAll" resultMap="brandResultMap">
+        select *
+        from tb_brand;
+    </select>
+</mapper>
