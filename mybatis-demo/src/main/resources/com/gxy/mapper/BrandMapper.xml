@@ -23,8 +23,104 @@
         <result column="brand_name" property="brandName"></result>
         <result column="company_name" property="companyName"></result>
     </resultMap>
+    
     <select id="selectAll" resultMap="brandResultMap">
         select *
         from tb_brand;
     </select>
+    
+    <!-- 条件查询 -->
+    <!-- <select id="selectByCondition" resultMap="brandResultMap">
+        select *
+        from tb_brand
+        where status = #{status}
+            and brand_name like #{brandName}
+            and company_name like #{companyName}
+    </select> -->
+
+    <!-- 动态条件查询
+            if条件判断，test逻辑表达式
+            问题：第一个参数不输入后，会报错
+            解决：1.加恒等式 2. <where>标签
+     -->
+    <select id="selectByCondition" resultMap="brandResultMap">
+        select *
+        from tb_brand
+         # where 1 = 1
+         <where>
+             <if test="status != null">
+                 status = #{status}
+             </if>
+             <if test="brandName != null and brandName != ''">
+                 and brand_name like #{brandName}
+             </if>
+             <if test="companyName != null and companyName != ''">
+                 and company_name like #{companyName}
+             </if>
+         </where>
+
+    </select>
+
+    <!-- 单条件动态查询 -->
+    <select id="selectByConditionSingle" resultType="com.gxy.pojo.Brand">
+        select *
+        from tb_brand
+        <where>
+            <choose>
+                <when test="status != null">
+                    status = #{status}
+                </when>
+                <when test="brandName != null and brandName != ''">
+                    brand_name like #{brandName}
+                </when>
+                <when test="companyName != null and companyName != ''">
+                    company_name like #{companyName}
+                </when>
+            </choose>
+        </where>
+    </select>
+
+    <!-- 添加 -->
+    <insert id="add" useGeneratedKeys="true" keyProperty="id">
+        insert into tb_brand (brand_name, company_name, ordered, description, status)
+        values (#{brandName}, #{companyName}, #{ordered}, #{description}, #{status});
+    </insert>
+
+    <!-- 修改 -->
+    <update id="update">
+        update tb_brand
+        <set>
+            <if test="brandName != null and brandName != ''">
+                brand_name = #{brandName},
+            </if>
+            <if test="companyName != null and companyName != ''">
+                company_name = #{companyName},
+            </if>
+            <if test="ordered != null">
+                ordered = #{ordered},
+            </if>
+            <if test="description != null and description != ''">
+                description = #{description},
+            </if>
+            <if test="status != null">
+                status = #{status}
+            </if>
+        </set>
+        where id = #{id};
+    </update>
+
+    <delete id="deleteById">
+        delete from tb_brand
+        where id = #{id};
+    </delete>
+    <!-- mybatis将数据分装成map，默认写array，若不写需要在函数参数中加@Param -->
+    <delete id="deleteByIds">
+        delete from tb_brand
+        where id
+        in(
+            <foreach collection="ids" item="id" separator=",">
+                #{id}
+            </foreach>
+                  )
+    </delete>
 </mapper>

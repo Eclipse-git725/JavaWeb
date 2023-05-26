@@ -5,25 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e34ad7df-eb8a-4c47-9450-e9b6ab8abc72" name="Changes" comment="5/25">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-demo/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-demo/src/main/java/com/gxy/MyBatisDemo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-demo/src/main/java/com/gxy/MyBatisDemo2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-demo/src/main/java/com/gxy/mapper/BrandMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-demo/src/main/java/com/gxy/mapper/UserMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-demo/src/main/java/com/gxy/pojo/Brand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-demo/src/main/java/com/gxy/pojo/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-demo/src/main/java/org/example/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-demo/src/main/resources/com/gxy/mapper/BrandMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-demo/src/main/resources/com/gxy/mapper/UserMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-demo/src/main/resources/logback.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-demo/src/main/resources/mybatis-config.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-demo/src/test/java/com/gxy/MyBatisTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dbnavigator.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mybatis-demo/src/main/java/com/gxy/mapper/BrandMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis-demo/src/main/java/com/gxy/mapper/BrandMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mybatis-demo/src/main/java/com/gxy/mapper/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis-demo/src/main/java/com/gxy/mapper/UserMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mybatis-demo/src/main/resources/com/gxy/mapper/BrandMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis-demo/src/main/resources/com/gxy/mapper/BrandMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mybatis-demo/src/test/java/com/gxy/MyBatisTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis-demo/src/test/java/com/gxy/MyBatisTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,7 +56,7 @@
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.17203312",
-    "settings.editor.selected.configurable": "preferences.lookFeel",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
     "vue.rearranger.settings.migration": "true"
   },
   "keyToStringList": {
@@ -84,9 +71,8 @@
       <recent name="D:\learning\javaweb\mybatis-demo" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.MyBatisDemo2">
-    <configuration name="MyBatisDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.gxy.MyBatisDemo" />
+  <component name="RunManager" selected="JUnit.MyBatisTest.testSelectById">
+    <configuration name="MyBatisTest.testAdd2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="mybatis-demo" />
       <extension name="coverage">
         <pattern>
@@ -94,12 +80,15 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="com.gxy" />
+      <option name="MAIN_CLASS_NAME" value="com.gxy.MyBatisTest" />
+      <option name="METHOD_NAME" value="testAdd2" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MyBatisDemo2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.gxy.MyBatisDemo2" />
+    <configuration name="MyBatisTest.testDeleteById" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="mybatis-demo" />
       <extension name="coverage">
         <pattern>
@@ -107,14 +96,69 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="com.gxy" />
+      <option name="MAIN_CLASS_NAME" value="com.gxy.MyBatisTest" />
+      <option name="METHOD_NAME" value="testDeleteById" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MyBatisTest.testDeleteByIds" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mybatis-demo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.gxy.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.gxy" />
+      <option name="MAIN_CLASS_NAME" value="com.gxy.MyBatisTest" />
+      <option name="METHOD_NAME" value="testDeleteByIds" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MyBatisTest.testSelectById" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mybatis-demo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.gxy.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.gxy" />
+      <option name="MAIN_CLASS_NAME" value="com.gxy.MyBatisTest" />
+      <option name="METHOD_NAME" value="testSelectById" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MyBatisTest.testUpdate" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mybatis-demo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.gxy.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.gxy" />
+      <option name="MAIN_CLASS_NAME" value="com.gxy.MyBatisTest" />
+      <option name="METHOD_NAME" value="testUpdate" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.MyBatisDemo2" />
-        <item itemvalue="Application.MyBatisDemo" />
+        <item itemvalue="JUnit.MyBatisTest.testSelectById" />
+        <item itemvalue="JUnit.MyBatisTest.testDeleteByIds" />
+        <item itemvalue="JUnit.MyBatisTest.testDeleteById" />
+        <item itemvalue="JUnit.MyBatisTest.testUpdate" />
+        <item itemvalue="JUnit.MyBatisTest.testAdd2" />
       </list>
     </recent_temporary>
   </component>
@@ -127,7 +171,7 @@
       <option name="presentableId" value="Default" />
       <updated>1685069997610</updated>
       <workItem from="1685069999278" duration="455000" />
-      <workItem from="1685070494239" duration="2186000" />
+      <workItem from="1685070494239" duration="11992000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1685070033480</created>
@@ -136,7 +180,14 @@
       <option name="project" value="LOCAL" />
       <updated>1685070033480</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="5/25">
+      <created>1685078127175</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1685078127175</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -146,5 +197,9 @@
     <MESSAGE value="init" />
     <MESSAGE value="5/25" />
     <option name="LAST_COMMIT_MESSAGE" value="5/25" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
