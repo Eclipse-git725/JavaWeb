@@ -9,7 +9,43 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e34ad7df-eb8a-4c47-9450-e9b6ab8abc72" name="Changes" comment="5/26 Servlet" />
+    <list default="true" id="e34ad7df-eb8a-4c47-9450-e9b6ab8abc72" name="Changes" comment="5/26 MyBatis">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/request-demo/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/request-demo/src/main/java/com/gxy/mapper/UserMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/request-demo/src/main/java/com/gxy/pojo/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/request-demo/src/main/java/com/gxy/utils/SqlSessionFactoryUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/request-demo/src/main/java/com/gxy/web/LoginServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/request-demo/src/main/java/com/gxy/web/RegisterServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/request-demo/src/main/java/com/gxy/web/request/RequestDemo1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/request-demo/src/main/java/com/gxy/web/request/RequestDemo2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/request-demo/src/main/java/com/gxy/web/request/RequestDemo4.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/request-demo/src/main/java/com/gxy/web/request/RequestDemo5.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/request-demo/src/main/java/com/gxy/web/request/RequestDemo6.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/request-demo/src/main/java/com/gxy/web/request/URLDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/request-demo/src/main/java/com/gxy/web/response/ResponseDemo1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/request-demo/src/main/java/com/gxy/web/response/ResponseDemo2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/request-demo/src/main/java/com/gxy/web/response/ResponseDemo3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/request-demo/src/main/java/com/gxy/web/response/ResponseDemo4.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/request-demo/src/main/java/org/example/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/request-demo/src/main/resources/a.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/request-demo/src/main/resources/com/gxy/mapper/UserMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/request-demo/src/main/resources/mybatis-config.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/request-demo/src/main/resources/tb_user.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/request-demo/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/request-demo/src/main/webapp/css/login.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/request-demo/src/main/webapp/css/register.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/request-demo/src/main/webapp/imgs/Desert.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/request-demo/src/main/webapp/imgs/reg_bg_min.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/request-demo/src/main/webapp/login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/request-demo/src/main/webapp/register.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/request-demo/src/main/webapp/req.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dbnavigator.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -19,6 +55,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -39,10 +76,11 @@
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
-        <option name="localRepository" value="E:\Software\maven\localRepository" />
-        <option name="mavenHome" value="E:/Software/maven/apache-maven-3.8.3" />
+        <option name="localRepository" value="D:\projects\maven\localRepository" />
+        <option name="mavenHome" value="$PROJECT_DIR$/../../projects/maven/apache-maven-3.8.3" />
         <option name="useMavenConfig" value="true" />
-        <option name="userSettingsFile" value="E:\Software\maven\apache-maven-3.8.3\conf\settings.xml" />
+        <option name="usePluginRegistry" value="true" />
+        <option name="userSettingsFile" value="D:\projects\maven\apache-maven-3.8.3\conf\settings.xml" />
       </MavenGeneralSettings>
     </option>
     <option name="importingSettings">
@@ -60,46 +98,51 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;1.8&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/Projects/电冰箱/后端/fridge&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.20114942&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;MavenSettings&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "jdk.selected.JAVA_MODULE": "1.8",
+    "last_opened_file_path": "D:/learning/javaweb/request-demo/src/main/resources/com/gxy/mapper",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.20114942",
+    "settings.editor.selected.configurable": "preferences.keymap",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;mysql&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\learning\javaweb\request-demo\src\main\resources\com\gxy\mapper" />
+      <recent name="D:\learning\javaweb\request-demo\src\main\resources" />
+      <recent name="D:\learning\javaweb\request-demo\src\main\java\com\gxy\pojo" />
+      <recent name="D:\learning\javaweb\request-demo\src\main\webapp" />
       <recent name="D:\learning\javaweb" />
-      <recent name="D:\learning\javaweb\mybatis-demo" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\learning\javaweb\tomcat-demo2\src\main\webapp" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.gxy.web" />
+      <recent name="com.gxy.web.response" />
       <recent name="com.gxy" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.URLDemo">
     <configuration name="Server" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <module name="javaweb" />
       <extension name="coverage">
@@ -112,18 +155,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MyBatisTest.testDeleteById" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="mybatis-demo" />
+    <configuration name="URLDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.gxy.web.request.URLDemo" />
+      <module name="request-demo" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.gxy.*" />
+          <option name="PATTERN" value="com.gxy.web.request.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.gxy" />
-      <option name="MAIN_CLASS_NAME" value="com.gxy.MyBatisTest" />
-      <option name="METHOD_NAME" value="testDeleteById" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -264,8 +304,8 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="Application.URLDemo" />
       <item itemvalue="Application.Server" />
-      <item itemvalue="JUnit.MyBatisTest.testDeleteById" />
       <item itemvalue="JUnit.MyBatisTest.testDeleteByIds" />
       <item itemvalue="JUnit.MyBatisTest.testSelectAll" />
       <item itemvalue="JUnit.MyBatisTest.testSelectById" />
@@ -273,11 +313,11 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.URLDemo" />
         <item itemvalue="Application.Server" />
         <item itemvalue="JUnit.MyBatisTest.testSelectAll" />
         <item itemvalue="JUnit.MyBatisTest.testSelectById" />
         <item itemvalue="JUnit.MyBatisTest.testDeleteByIds" />
-        <item itemvalue="JUnit.MyBatisTest.testDeleteById" />
       </list>
     </recent_temporary>
   </component>
@@ -298,6 +338,10 @@
       <workItem from="1685178942933" duration="446000" />
       <workItem from="1685179413321" duration="403000" />
       <workItem from="1685179833806" duration="2980000" />
+      <workItem from="1685328394643" duration="364000" />
+      <workItem from="1685328771541" duration="209000" />
+      <workItem from="1685328993048" duration="6874000" />
+      <workItem from="1685343155493" duration="9179000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1685070033480</created>

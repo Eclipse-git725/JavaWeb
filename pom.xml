@@ -13,6 +13,7 @@
         <module>tomcat-demo1</module>
         <module>tomcat-demo2</module>
         <module>web-demo</module>
+        <module>request-demo</module>
     </modules>
 
     <properties>
