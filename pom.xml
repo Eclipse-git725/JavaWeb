@@ -18,6 +18,7 @@
         <module>brand-demo</module>
         <module>brand-demo</module>
         <module>brand-demo</module>
+        <module>filter-demo</module>
     </modules>
 
     <properties>
