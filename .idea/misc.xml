@@ -2,10 +2,13 @@
 <project version="4">
   <component name="ExternalStorageConfigurationManager" enabled="true" />
   <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="web" url="file://$PROJECT_DIR$/brand-demo" />
+    <file type="web" url="file://$PROJECT_DIR$/cookie-demo" />
     <file type="web" url="file://$PROJECT_DIR$/request-demo" />
     <file type="web" url="file://$PROJECT_DIR$/tomcat-demo1" />
     <file type="web" url="file://$PROJECT_DIR$/tomcat-demo2" />
     <file type="web" url="file://$PROJECT_DIR$/web-demo" />
+    <file type="web" url="file://$PROJECT_DIR$/../资料/javaweb/day10-JSP/代码/brand-demo" />
   </component>
   <component name="MavenProjectsManager">
     <option name="originalFiles">

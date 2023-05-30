@@ -14,6 +14,10 @@
         <module>tomcat-demo2</module>
         <module>web-demo</module>
         <module>request-demo</module>
+        <module>cookie-demo</module>
+        <module>brand-demo</module>
+        <module>brand-demo</module>
+        <module>brand-demo</module>
     </modules>
 
     <properties>
