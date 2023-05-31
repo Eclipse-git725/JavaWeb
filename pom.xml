@@ -19,6 +19,7 @@
         <module>brand-demo</module>
         <module>brand-demo</module>
         <module>filter-demo</module>
+        <module>ajax-demo</module>
     </modules>
 
     <properties>

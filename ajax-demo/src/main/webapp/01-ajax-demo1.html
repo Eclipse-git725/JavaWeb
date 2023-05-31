@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+  // 1.创建核心对象
+  // 创建 XMLHttpRequest 对象
+  const xhttp = new XMLHttpRequest();
+
+  // 定义回调函数
+  xhttp.onload = function() {
+    // 您可以在这里使用数据
+  }
+
+  // 2.发送请求
+  xhttp.open("GET", "http://localhost:9080/ajax-demo/ajaxServlet");
+  xhttp.send();
+
+  // 3.获取响应
+  xhttp.onreadystatechange = function() {
+      if (this.readyState == 4 && this.status == 200) {
+          alert(this.responseText)
+      }
+  };
+  
+</script>
+
+</body>
+</html>
